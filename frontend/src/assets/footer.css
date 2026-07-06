@@ -1,0 +1,211 @@
+/* ===========================
+   Footer Section
+=========================== */
+
+.footer-section{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:#fff;
+    padding:80px 8% 30px;
+    margin-top:100px;
+    overflow:hidden;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:1.5fr 1fr 1.5fr 1fr;
+    gap:30px;
+    align-items:start;
+}
+
+/* ===========================
+   Glass Cards
+=========================== */
+
+.footer-brand,
+.footer-column{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:25px;
+    padding:30px;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.35),
+        inset 0 1px 1px rgba(255,255,255,.1);
+
+    transition:.35s;
+}
+
+.footer-brand:hover,
+.footer-column:hover{
+    transform:translateY(-8px);
+}
+
+/* ===========================
+   Brand
+=========================== */
+
+.footer-brand h2{
+    font-size:clamp(1.8rem,4vw,2.2rem);
+    background:linear-gradient(90deg,#38bdf8,#8b5cf6);
+    -webkit-background-clip:text;
+    color:transparent;
+    margin-bottom:20px;
+}
+
+.footer-brand p{
+    color:#cbd5e1;
+    line-height:1.8;
+    font-size:1rem;
+}
+
+/* ===========================
+   Headings
+=========================== */
+
+.footer-column h3{
+    color:#60a5fa;
+    margin-bottom:20px;
+    font-size:1.3rem;
+}
+
+/* ===========================
+   Lists
+=========================== */
+
+.footer-column ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.footer-column li{
+    margin-bottom:14px;
+    line-height:1.7;
+}
+
+/* ===========================
+   Links
+=========================== */
+
+.footer-column a{
+    color:#cbd5e1;
+    text-decoration:none;
+    transition:.3s;
+    word-break:break-word;
+}
+
+.footer-column a:hover{
+    color:#38bdf8;
+    padding-left:8px;
+}
+
+/* ===========================
+   Footer Bottom
+=========================== */
+
+.footer-bottom{
+    margin-top:50px;
+    padding-top:25px;
+    border-top:1px solid rgba(255,255,255,.15);
+    text-align:center;
+}
+
+.footer-bottom p{
+    color:#94a3b8;
+    font-size:.95rem;
+    line-height:1.6;
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width:992px){
+
+    .footer-section{
+        padding:70px 6% 30px;
+    }
+
+    .footer-container{
+        grid-template-columns:repeat(2,1fr);
+        gap:25px;
+    }
+
+    .footer-brand,
+    .footer-column{
+        padding:25px;
+    }
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width:768px){
+
+    .footer-section{
+        padding:60px 5% 25px;
+        margin-top:70px;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .footer-brand,
+    .footer-column{
+        padding:22px;
+        border-radius:20px;
+    }
+
+    .footer-brand h2{
+        text-align:center;
+    }
+
+    .footer-brand p{
+        text-align:center;
+    }
+
+    .footer-column h3{
+        text-align:center;
+    }
+
+    .footer-column ul{
+        text-align:center;
+    }
+
+}
+
+/* ===========================
+   Small Mobile
+=========================== */
+
+@media (max-width:480px){
+
+    .footer-section{
+        padding:50px 18px 20px;
+    }
+
+    .footer-brand,
+    .footer-column{
+        padding:18px;
+    }
+
+    .footer-brand h2{
+        font-size:1.6rem;
+    }
+
+    .footer-column h3{
+        font-size:1.15rem;
+    }
+
+    .footer-brand p,
+    .footer-column li,
+    .footer-bottom p{
+        font-size:.9rem;
+    }
+
+}
